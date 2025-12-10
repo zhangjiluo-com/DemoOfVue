@@ -3,6 +3,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 import JsxComponent from "./components/JsxComponent.tsx";
 import FunctionComponent from "./components/FunctionComponent.tsx";
 import { ref } from "vue";
+import TDesignComponent from "./components/TDesignComponent.vue";
 
 const fcMsg = ref("Hello FunctionComponent");
 
@@ -26,6 +27,7 @@ function onClick(value: string) {
     <FunctionComponent :msg="fcMsg" @clickMe="onClick" />
   </div>
   <HelloWorld msg="Vue" />
+  <TDesignComponent />
 </template>
 
 <style scoped>
