@@ -13,14 +13,16 @@ function onClick(value: string) {
 
 <template>
   <div>
-    <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+    <img src="./assets/vue.svg" class="logo mx-auto" alt="Vue logo" />
   </div>
   <div class="">
     <div class="">JsxComponent:</div>
     <JsxComponent msg="Hello Jsx" />
   </div>
   <div class="">
-    <div class="">FunctionComponent:</div>
+    <div class="w-full h-14 flex items-center justify-center bg-red-500">
+      FunctionComponent:
+    </div>
     <FunctionComponent :msg="fcMsg" @clickMe="onClick" />
   </div>
   <HelloWorld msg="Vue" />
